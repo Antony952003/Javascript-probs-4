@@ -1,0 +1,175 @@
+//Use forEach to console.log each name in the names array.
+
+/* for(i in arr)
+{
+  process.stdout.write(`${arr[i]} `);
+} */
+
+
+//Use map to create a new array by changing each number to square in the numbers array
+
+/* 
+const numbers = [1,2,3,4,5];
+const squareof = numbers.map((num)=>{
+  return num*num;
+});
+console.log(squareof);
+ */
+
+
+
+//Use filter to filter out country start with 'E';
+
+/* const country = ["europe","italy","United States","Chennai","ezilon"]
+const ans = country.filter((str) => {
+  return str[0] == 'e';
+})
+console.log(ans) */
+
+//Declare a function called getStringLists which takes an array as a parameter and then returns an array only with string items.
+
+/* const arr = [1,2,3,"ads"];
+const ans = arr.filter((str)=>{
+  return typeof(str) == 'string';
+})
+ */
+
+//Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
+
+/* const country = ["europe","italy","United States","Chennai","ezilon"]
+const ans = country.reduce(func);
+function func(total,num) {
+  return (total+" "+num);
+}
+console.log(`${ans} are the northern countries`)
+ */
+
+
+//Find out which letter is used many times as initial for a country name from the countries array (eg. Finland, Fiji, France etc)
+
+/* const country = ["europe","italy","United States","Chennai","ezilon"]
+const map = new Map();
+country.filter((str)=>{
+  if(map.has(str[0]))
+  {
+    map.set(str[0],map.get(str[0])+1);
+  }
+  else{
+    map.set(str[0],1);
+  }
+})
+var ans = 0;
+var letter = ' ';
+map.forEach((value,key)=>{
+  if(value > ans){
+    ans = value;
+    letter = key;
+  }
+});
+console.log(letter+" : "+ans)
+ */
+
+
+//Create a set containing 0 to 10 using loop
+
+
+/* const set = new Set();
+for (let index = 1; index <= 10; index++) {
+    set.add(index);
+}
+console.log(set);
+
+//Remove an element from a set
+
+set.delete(5);
+console.log(set);
+
+//Clear a set
+
+
+set.clear();
+console.log(set);
+ */
+
+
+//Create a set of 5 string elements from array
+
+/* const set = new Set();
+const arr = ['Finland','Finland','Australia','Sweden','Denmark','India']
+var count = 0;
+arr.forEach(element => {
+  set.add(element);
+  count++;
+});
+console.log(set)
+ */
+
+//Create a map of countries and number of characters of a country
+
+/* 
+const map = new Map();
+const arr = ['Finland','Finland','Australia','Sweden','Denmark','India'];
+arr.filter((str)=>{
+  map.set(str,str.length);
+});
+console.log(map);
+ */
+
+//Find a union b
+
+ /*      var a = [1,2,2,3,4,5,6,7,8]
+      var b = [7,8,9,10,11,12,13,14,15,16,17,18]
+      var n = a.length;
+      var m = b.length;
+      var min = (n < m) ? n : m;
+ 
+        var set = new Set();
+ 
+        for (i = 0; i < min; i++) {
+            set.add(a[i]);
+            set.add(b[i]);
+        }
+ 
+        if (n > m) {
+            for (i = m; i < n; i++) {
+                set.add(a[i]);
+            }
+        } else if (n < m) {
+            for (i = n; i < m; i++) {
+                set.add(b[i]);
+            }
+        }
+         set.forEach (function(value) {
+          console.log(value+" ");
+});
+
+//Find a intersection b
+
+    const set1 = new Set(a);
+    const set2 = new Set(b);
+
+    let intersection = [];
+
+    for (let i of set2) {
+    
+        if (set1.has(i)) {
+            intersection.push(i);
+        }
+    }
+    console.log(intersection);
+           */
+
+/*     const country = [
+      {'French':45},
+      {'Arabic':25},
+      {'Spanish':24},
+      {'English':91},
+      {'Russian':9},
+      {'Portuguese':9},
+      {'Dutch':8},
+      {'German':7},
+      {'Chinese':5},
+      {'Swahili':4},
+      {'Serbian':4}
+    ]
+ */
